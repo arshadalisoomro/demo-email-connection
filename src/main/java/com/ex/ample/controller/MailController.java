@@ -34,7 +34,7 @@ public class MailController {
     }
 
     @PostMapping(value = "/")
-    public String postContactPage(@ModelAttribute(value = "contact") Email mail) throws Exception{
+    public String postContactPage(@ModelAttribute(value = "mail") Email mail) throws Exception{
         log.info("Sending Email with Thymeleaf HTML Template Example");
 
         mail.setTo("info@memorynotfound.com");
